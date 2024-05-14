@@ -1,72 +1,84 @@
-<style>
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    text-align: left;
-    margin: 0 auto; /* این خط باعث می شود جدول در وسط صفحه قرار گیرد */
-  }
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Antix Linux Respins</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+        }
 
-  th, td {
-    padding: 8px;
-    border: 1px solid black; /* این خط باعث می شود خطوط سلول ها مشکی شوند */
-  }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
 
-  th {
-    background-color: #f2f2f2;
-  }
-</style>
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
 
-<h3>Antix Linux Respins</h3>
-<p>This table provides information about various respins of the Antix Linux operating system. Each respin is a customized version of Antix tailored for specific purposes or user preferences. The table includes the respin name, a brief description, the maintainer, download links, and links to the respective forum threads for each respin.</p>
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
 
-<table>
-  <tr>
-    <th>Respin Name</th>
-    <th>Description</th>
-    <th>Maintainer</th>
-    <th>Download Link</th>
-    <th>Forum Link</th>
-  </tr>
-  <tr>
-    <td>antiX 23.1 aXd</td>
-    <td>tiling window manager</td>
-    <td><a href="https://www.antixforum.com/forums/users/techore/">techore</a></td>
-    <td><a href="https://archive.org/details/axd231rc">axd231rc (1.4 G)</a></td>
-    <td><a href="https://www.antixforum.com/forums/topic/antix-23-1-axd-unofficial-spin-release-candidate/">antix-23-1-axd</a></td>
-  </tr>
-   <tr>
-    <td>antiX23.1 x64 CD version</td>
-    <td>fits into CD</td>
-    <td><a href="https://www.antixforum.com/forums/users/calciumsodium/">calciumsodium</a></td>
-    <td><a href="https://archive.org/details/anti-x-23.1-x-64-744-mb-all-firmware">anti-x-23.1-x-64-744-mb-all-firmware (744 M)</a></td>
-    <td><a href="https://www.antixforum.com/forums/topic/antix23-1-x64-respin-that-fits-into-cd/">antiX23.1 x64 CD version</a></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-</table>
+        tr:hover {
+            background-color: #e6e6e6;
+        }
+
+        a {
+            color: #337ab7;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h3>Antix Linux Respins</h3>
+    <p>This table provides information about various respins of the Antix Linux operating system.</p>
+
+    <table>
+        <tr>
+            <th>Respin Name</th>
+            <th>Description</th>
+            <th>Maintainer</th>
+            <th>Download Link</th>
+            <th>Forum Link</th>
+        </tr>
+        <tr>
+            <td>antiX 23.1 aXd</td>
+            <td>tiling window manager</td>
+            <td><a href="https://www.antixforum.com/forums/users/techore/">techore</a></td>
+            <td><a href="https://archive.org/details/axd231rc">axd231rc (1.4 G)</a></td>
+            <td><a href="https://www.antixforum.com/forums/topic/antix-23-1-axd-unofficial-spin-release-candidate/">antix-23-1-axd</a></td>
+        </tr>
+        <tr>
+            <td>antiX23.1 x64 CD version</td>
+            <td>fits into CD</td>
+            <td><a href="https://www.antixforum.com/forums/users/calciumsodium/">calciumsodium</a></td>
+            <td><a href="https://archive.org/details/anti-x-23.1-x-64-744-mb-all-firmware">anti-x-23.1-x-64-744-mb-all-firmware (744 M)</a></td>
+            <td><a href="https://www.antixforum.com/forums/topic/antix23-1-x64-respin-that-fits-into-cd/">antiX23.1 x64 CD version</a></td>
+        </tr>
+        <tr>
+            <td>antiX17 x64 respin with latest Google Chrome, fits in CD</td>
+            <td>antiX17 x64 respin with latest Google Chrome, fits in CD. Contains all firmware as in official antiX17</td>
+            <td><a href="https://www.antixforum.com/forums/users/calciumsodium/">calciumsodium</a></td>
+            <td><a href="https://archive.org/details/anti-x-17-x-64-google-chrome-cd">https://archive.org/details/anti-x-17-x-64-google-chrome-cd</a></td>
+            <td><a href="https://www.antixforum.com/forums/topic/antix17-x64-respin-with-google-chrome-fits-in-cd/">antiX17 x64 respin with Google Chrome, fits in CD</a></td>
+        </tr>
+        <tr>
+            <td>antiX19 x64 respin with latest firefox with openrc init, fits into CD</td>
+            <td>antiX19 x64 respin with openrc init that fits into CD. Contains all firmware as in official antiX19. Latest google chrome can also be installed on this antiX19 respin using the instructions here: <a href="https://www.antixforum.com/forums/topic/antix19-x64-respin-with-openrc-init-that-fits-into-cd/#post-141365">https://www.antixforum.com/forums/topic/antix19-x64-respin-with-openrc-init-that-fits-into-cd/#post-141365</a></td>
+            <td><a href="https://www.antixforum.com/forums/users/calciumsodium/">calciumsodium</a></td>
+            <td><a href="https://archive.org/details/4.9-kernel-snapshot-20240503-1746">https://archive.org/details/4.9-kernel-snapshot-20240503-1746</a></td>
+            <td><a href="https://www.antixforum.com/forums/topic/antix19-x64-respin-with-openrc-init-that-fits-into-cd/#post-141289">antiX19 x64 respin with openrc init, fits into CD</a></td>
+        </tr>
+    </table>
+</body>
+</html>
